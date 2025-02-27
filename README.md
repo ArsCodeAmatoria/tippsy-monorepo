@@ -1,16 +1,15 @@
 # Tippsy - Dating & Bar Matching App
 
-![Image](https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f)
-
 <div align="center">
+  <img src="https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f" alt="Tippsy Logo">
   <p><em>Find your perfect match and the perfect bar for your first date</em></p>
 </div>
 
-## 🍹 About Tippsy
+## About Tippsy
 
 Tippsy is an innovative dating app that not only helps users find compatible matches but also suggests the perfect bars and venues for their first date. By combining dating preferences with drink and venue preferences, Tippsy creates a seamless experience from match to meetup.
 
-## 🚀 Features
+## Features
 
 - **Match with Compatible People**: Swipe and match with people who share your interests
 - **Bar Recommendations**: Get personalized bar suggestions based on mutual preferences
@@ -19,7 +18,7 @@ Tippsy is an innovative dating app that not only helps users find compatible mat
 - **Authentication**: Email, Google, Apple, and Meta login options
 - **Chat**: Real-time chat functionality between matches
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 This monorepo is built with:
 
@@ -31,7 +30,7 @@ This monorepo is built with:
 - **[TypeScript](https://www.typescriptlang.org/)**: For type safety across all platforms
 - **[Firebase](https://firebase.google.com/)**: For authentication and database
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 tippsy-monorepo/
@@ -47,7 +46,7 @@ tippsy-monorepo/
 └── turbo.json       # Turborepo configuration
 ```
 
-## 🧰 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -90,7 +89,7 @@ pnpm --filter web dev
 pnpm --filter mobile dev
 ```
 
-## 📱 Running on Mobile
+## Running on Mobile
 
 To run the mobile app:
 
@@ -101,21 +100,21 @@ pnpm start
 
 Then, scan the QR code with the Expo Go app on your device, or press 'i' for iOS simulator or 'a' for Android emulator.
 
-## 🔄 Workflows
+## Workflows
 
 - `pnpm build`: Build all applications
 - `pnpm dev`: Start development environment
 - `pnpm lint`: Run linting across all projects
 - `pnpm test`: Run tests across all projects
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👥 Team
+## Team
 
-- Koji - Developer 
+- Koji - Developer
