@@ -117,4 +117,4 @@ This project is licensed under the MIT License.
 
 ## Team
 
-- Koji - Developer
+- Kojin - Developer
