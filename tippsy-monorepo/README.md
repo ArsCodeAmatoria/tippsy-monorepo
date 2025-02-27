@@ -1,84 +1,104 @@
-# Turborepo starter
+# Tippsy - Dating & Bar Matching App
 
-This Turborepo starter is maintained by the Turborepo core team.
+<div align="center">
+  <img src="https://via.placeholder.com/200x200.png?text=Tippsy+Logo" alt="Tippsy Logo" width="200" height="200">
+  <p><em>Find your perfect match and the perfect bar for your first date</em></p>
+</div>
 
-## Using this example
+## 🍹 About Tippsy
 
-Run the following command:
+Tippsy is an innovative dating app that not only helps users find compatible matches but also suggests the perfect bars and venues for their first date. By combining dating preferences with drink and venue preferences, Tippsy creates a seamless experience from match to meetup.
+
+## 🚀 Features
+
+- **Match with Compatible People**: Swipe and match with people who share your interests
+- **Bar Recommendations**: Get personalized bar suggestions based on mutual preferences
+- **Dark/Light Mode**: Enjoy a beautiful UI in both light and dark modes
+- **Cross-platform**: Available on web and mobile (iOS/Android)
+
+## 🛠️ Tech Stack
+
+This monorepo is built with:
+
+- **[Turborepo](https://turbo.build/repo)**: For managing the monorepo structure
+- **[Next.js](https://nextjs.org/)**: For the web application
+- **[React Native](https://reactnative.dev/)**: For the mobile applications
+- **[Expo](https://expo.dev/)**: To streamline mobile development
+- **[TailwindCSS](https://tailwindcss.com/)**: For styling the web app
+- **[TypeScript](https://www.typescriptlang.org/)**: For type safety across all platforms
+
+## 📂 Project Structure
+
+```
+tippsy-monorepo/
+├── apps/
+│   ├── docs/         # Documentation site
+│   ├── mobile/       # React Native mobile app
+│   └── web/          # Next.js web app
+├── packages/
+│   ├── eslint-config/  # Shared ESLint configurations
+│   ├── typescript-config/  # Shared TypeScript configurations
+│   ├── ui/          # Shared UI components
+│   └── utils/       # Shared utilities
+└── turbo.json       # Turborepo configuration
+```
+
+## 🧰 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later)
+- [pnpm](https://pnpm.io/) (v8 or later)
+
+### Installation
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/Tippsy/tippsy-monorepo.git
+   cd tippsy-monorepo
+   ```
+
+2. Install dependencies
+   ```sh
+   pnpm install
+   ```
+
+3. Start development server
+   ```sh
+   pnpm dev
+   ```
+
+This will start the development servers for all applications:
+- Web app: http://localhost:3000
+- Documentation: http://localhost:3001
+- Mobile app: Follow Expo instructions in terminal
+
+## 📱 Running on Mobile
+
+To run the mobile app:
 
 ```sh
-npx create-turbo@latest
+cd apps/mobile
+pnpm start
 ```
 
-## What's inside?
+Then, scan the QR code with the Expo Go app on your device, or press 'i' for iOS simulator or 'a' for Android emulator.
 
-This Turborepo includes the following packages/apps:
+## 🔄 Workflows
 
-### Apps and Packages
+- `pnpm build`: Build all applications
+- `pnpm dev`: Start development environment
+- `pnpm lint`: Run linting across all projects
+- `pnpm test`: Run tests across all projects
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+## 🤝 Contributing
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Utilities
+## 📄 License
 
-This Turborepo has some additional tools already setup for you:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 👥 Team
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- Koji - Developer
