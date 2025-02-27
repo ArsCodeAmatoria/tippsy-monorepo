@@ -1,0 +1,11 @@
+[install]
+# Use the same configuration as .npmrc
+exact = true
+
+[install.scopes]
+# Configure workspaces for monorepo
+"tippsy" = { workspace = true }
+
+# Configure monorepo workspaces
+[workspaces]
+paths = ["apps/*", "packages/*"] 
