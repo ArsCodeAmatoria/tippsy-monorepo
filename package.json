@@ -7,7 +7,11 @@
     "dev:bun": "bun --bun next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "next build"
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
