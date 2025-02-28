@@ -6,8 +6,10 @@ module.exports = {
   // Explicitly define page extensions
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   
-  // Disable the App Router entirely to prevent conflicts
-  appDir: false,
+  // Enable the App Router
+  experimental: {
+    appDir: true,
+  },
   
   // Ensure proper error handling
   onDemandEntries: {
