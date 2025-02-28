@@ -12,6 +12,17 @@
   font-display: swap;
 }
 
+/* Font preloading to avoid layout shift */
+body::before {
+  content: '';
+  font-family: 'Mrs Shepard';
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

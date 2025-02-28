@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { useTheme } from 'next-themes';
 import { Sun, Moon } from 'lucide-react';
+import { Logo } from '../components/Logo';
+
+// Client-side only theme toggle component
+const ThemeToggle = () => {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Only show the toggle after component mount to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <div className="w-10 h-10"></div>; // Placeholder with same size
+
+  return (
+    <button 
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      aria-label="Toggle theme"
+    >
+      {theme === 'dark' ? <Sun size={20} className="text-white" /> : <Moon size={20} className="text-black" />}
+    </button>
+  );
+};
 
 export default function HomePage() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <>
       <Head>
@@ -18,16 +40,10 @@ export default function HomePage() {
         {/* Header */}
         <header className="border-b border-gray-100 dark:border-gray-800">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-4xl md:text-5xl font-mrs-shepard text-black dark:text-white">Tippsy</h1>
+            <Logo />
             
             <div className="flex items-center space-x-4">
-              <button 
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? <Sun size={20} className="text-white" /> : <Moon size={20} className="text-black" />}
-              </button>
+              <ThemeToggle />
             </div>
           </div>
         </header>
