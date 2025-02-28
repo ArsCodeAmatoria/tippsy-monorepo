@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Mrs Shepard Font */
+@font-face {
+  font-family: 'Mrs Shepard';
+  src: url('/fonts/MrsShepard-Regular.woff2') format('woff2'),
+       url('/fonts/MrsShepard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +34,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.font-mrs-shepard {
+  font-family: 'Mrs Shepard', cursive;
 } 
