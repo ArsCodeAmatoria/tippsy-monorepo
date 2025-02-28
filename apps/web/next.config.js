@@ -6,8 +6,7 @@ module.exports = {
   // Explicitly define page extensions
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   
-  // Disable the App Router entirely to prevent conflicts
-  appDir: false,
+  // Enable App Router (appDir is no longer experimental in Next.js 14.2)
   
   // Ensure proper error handling
   onDemandEntries: {

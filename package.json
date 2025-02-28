@@ -1,15 +1,19 @@
 {
-  "name": "web",
+  "name": "tippsy-monorepo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cd apps/web && npm run dev",
     "dev:bun": "bun --bun next dev",
-    "build": "ls -la && pwd && echo 'Node version:' && node -v && echo 'Building Next.js app...' && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "postinstall": "next build"
+    "build": "cd apps/web && npm run build",
+    "start": "cd apps/web && npm run start",
+    "lint": "cd apps/web && npm run lint",
+    "postinstall": "cd apps/web && npm run build"
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "engines": {
     "node": ">=18.x"
   },
