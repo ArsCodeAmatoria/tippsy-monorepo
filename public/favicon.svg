@@ -5,7 +5,7 @@
         fill: #1e1e1e;
       }
       text {
-        fill: white;
+        fill: #ff007f;
       }
     }
     @media (prefers-color-scheme: light) {
@@ -13,10 +13,10 @@
         fill: #f5f5f5;
       }
       text {
-        fill: black;
+        fill: #ff007f;
       }
     }
   </style>
   <rect width="100" height="100" rx="20" fill="#f5f5f5" />
-  <text x="50" y="70" font-size="60" text-anchor="middle" fill="black" font-family="cursive" font-weight="bold">T</text>
+  <text x="50" y="70" font-size="60" text-anchor="middle" fill="#ff007f" font-family="cursive" font-weight="bold">T</text>
 </svg> 

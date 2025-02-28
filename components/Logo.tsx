@@ -12,7 +12,7 @@ const mrsSheppards = Mrs_Sheppards({
 export function Logo() {
   return (
     <div className="relative z-50 px-6 py-3">
-      <h1 className={`text-4xl md:text-5xl font-bold ${mrsSheppards.className} text-black dark:text-white tracking-widest mx-2 whitespace-nowrap`}>
+      <h1 className={`text-4xl md:text-5xl font-bold ${mrsSheppards.className} whitespace-nowrap mx-2`} style={{ color: '#ff007f' }}>
         Tippsy
       </h1>
     </div>
