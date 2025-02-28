@@ -1,6 +1,28 @@
-# Tippsy Web App
+# Tippsy - Dating & Bar Matching App
 
-A web application built with Next.js 14 and TailwindCSS.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f" alt="Tippsy Logo" width="200">
+  <p><em>Find your perfect match and the perfect bar for your first date</em></p>
+</div>
+
+## About Tippsy
+
+Tippsy is an innovative dating app that not only helps users find compatible matches but also suggests the perfect bars and venues for their first date. By combining dating preferences with drink and venue preferences, Tippsy creates a seamless experience from match to meetup.
+
+## Features
+
+- **Match with Compatible People**: Swipe and match with people who share your interests
+- **Bar Recommendations**: Get personalized bar suggestions based on mutual preferences
+- **Dark/Light Mode**: Enjoy a beautiful UI in both light and dark modes
+- **Authentication**: Secure login options for users
+- **Chat**: Real-time chat functionality between matches
+
+## Tech Stack
+
+- **[Next.js](https://nextjs.org/)**: For the web application
+- **[TailwindCSS](https://tailwindcss.com/)**: For styling
+- **[TypeScript](https://www.typescriptlang.org/)**: For type safety
+- **[Bun](https://bun.sh)**: For fast development and builds
 
 ## Getting Started
 
@@ -45,14 +67,6 @@ To start the production server:
 ```bash
 bun run start
 ```
-
-## Features
-
-- Next.js 14 with App Router support
-- TailwindCSS for styling
-- Dark mode support with next-themes
-- Google Fonts integration
-- TypeScript support
 
 ## Project Structure
 
