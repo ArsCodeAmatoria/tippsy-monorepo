@@ -3,8 +3,6 @@
   "version": 2,
   "framework": "nextjs",
   "buildCommand": "next build",
-  "devCommand": null,
-  "installCommand": null,
   "outputDirectory": ".next",
   "git": {
     "deploymentEnabled": {

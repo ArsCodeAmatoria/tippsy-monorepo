@@ -6,11 +6,6 @@ module.exports = {
   // Explicitly define page extensions
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
   
-  // Enable the App Router
-  experimental: {
-    appDir: true,
-  },
-  
   // Ensure proper error handling
   onDemandEntries: {
     // period (in ms) where the server will keep pages in the buffer

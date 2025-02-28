@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:bun": "bun --bun next dev",
-    "build": "next build",
+    "build": "ls -la && pwd && echo 'Node version:' && node -v && echo 'Building Next.js app...' && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "next build"
