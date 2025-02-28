@@ -2,26 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Mrs Shepard Font */
-@font-face {
-  font-family: 'Mrs Shepard';
-  src: url('/fonts/MrsShepard-Regular.woff2') format('woff2'),
-       url('/fonts/MrsShepard-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Font preloading to avoid layout shift */
-body::before {
-  content: '';
-  font-family: 'Mrs Shepard';
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  position: absolute;
-  overflow: hidden;
-}
+/* Google Fonts import for Mrs Sheppards */
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -47,6 +29,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.font-mrs-shepard {
-  font-family: 'Mrs Shepard', cursive;
+.font-mrs-sheppards {
+  font-family: 'Mrs Sheppards', cursive;
 } 

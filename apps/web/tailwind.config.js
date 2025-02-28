@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'mrs-shepard': ['Mrs Shepard', 'cursive'],
+        'mrs-sheppards': ['"Mrs Sheppards"', 'cursive'],
       },
       colors: {
         border: 'hsl(var(--border))',
