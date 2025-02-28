@@ -10,6 +10,14 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Tippsy - Dating & Bar Matching App',
   description: 'Find your perfect match and the perfect bar for your first date.',
+  icons: {
+    icon: [
+      {
+        url: '/favicon.svg',
+        href: '/favicon.svg',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
