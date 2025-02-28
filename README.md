@@ -1,120 +1,71 @@
-# Tippsy - Dating & Bar Matching App
+# Tippsy Web App
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f" alt="Tippsy Logo">
-  <p><em>Find your perfect match and the perfect bar for your first date</em></p>
-</div>
-
-## About Tippsy
-
-Tippsy is an innovative dating app that not only helps users find compatible matches but also suggests the perfect bars and venues for their first date. By combining dating preferences with drink and venue preferences, Tippsy creates a seamless experience from match to meetup.
-
-## Features
-
-- **Match with Compatible People**: Swipe and match with people who share your interests
-- **Bar Recommendations**: Get personalized bar suggestions based on mutual preferences
-- **Dark/Light Mode**: Enjoy a beautiful UI in both light and dark modes
-- **Cross-platform**: Available on web and mobile (iOS/Android)
-- **Authentication**: Email, Google, Apple, and Meta login options
-- **Chat**: Real-time chat functionality between matches
-
-## Tech Stack
-
-This monorepo is built with:
-
-- **[Turborepo](https://turbo.build/repo)**: For managing the monorepo structure
-- **[Next.js](https://nextjs.org/)**: For the web application
-- **[React Native](https://reactnative.dev/)**: For the mobile applications
-- **[Expo](https://expo.dev/)**: To streamline mobile development
-- **[TailwindCSS](https://tailwindcss.com/)**: For styling the web app
-- **[TypeScript](https://www.typescriptlang.org/)**: For type safety across all platforms
-- **[Firebase](https://firebase.google.com/)**: For authentication and database
-
-## Project Structure
-
-```
-tippsy-monorepo/
-├── apps/
-│   ├── docs/         # Documentation site
-│   ├── mobile/       # React Native mobile app
-│   └── web/          # Next.js web app
-├── packages/
-│   ├── eslint-config/  # Shared ESLint configurations
-│   ├── typescript-config/  # Shared TypeScript configurations
-│   ├── ui/          # Shared UI components
-│   └── utils/       # Shared utilities
-└── turbo.json       # Turborepo configuration
-```
+A web application built with Next.js 14 and TailwindCSS.
 
 ## Getting Started
 
+This project uses [Bun](https://bun.sh) for faster development and build processes.
+
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or later)
-- [pnpm](https://pnpm.io/) (v8 or later)
+1. Install Bun if you haven't already:
 
-### Installation
-
-1. Clone the repository
-   ```sh
-   git clone https://github.com/Tippsy/tippsy-monorepo.git
-   cd tippsy-monorepo
-   ```
-
-2. Install dependencies
-   ```sh
-   pnpm install
-   ```
-
-3. Start development server
-   ```sh
-   pnpm dev
-   ```
-
-This will start the development servers for all applications:
-- Web app: http://localhost:3000
-- Documentation: http://localhost:3001
-- Mobile app: Follow Expo instructions in terminal
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
 
 ### Development
 
+1. Install dependencies:
+
 ```bash
-# Start both web and mobile apps in development mode
-pnpm dev
-
-# Start only the web app
-pnpm --filter web dev
-
-# Start only the mobile app
-pnpm --filter mobile dev
+bun install
 ```
 
-## Running on Mobile
+2. Start the development server:
 
-To run the mobile app:
-
-```sh
-cd apps/mobile
-pnpm start
+```bash
+bun run dev
 ```
 
-Then, scan the QR code with the Expo Go app on your device, or press 'i' for iOS simulator or 'a' for Android emulator.
+This will start the development server at [http://localhost:3000](http://localhost:3000).
 
-## Workflows
+### Build
 
-- `pnpm build`: Build all applications
-- `pnpm dev`: Start development environment
-- `pnpm lint`: Run linting across all projects
-- `pnpm test`: Run tests across all projects
+To build the project for production:
 
-## Contributing
+```bash
+bun run build
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Start Production Server
 
-## License
+To start the production server:
 
-This project is licensed under the MIT License.
+```bash
+bun run start
+```
 
-## Team
+## Features
 
-- Kojin - Developer
+- Next.js 14 with App Router support
+- TailwindCSS for styling
+- Dark mode support with next-themes
+- Google Fonts integration
+- TypeScript support
+
+## Project Structure
+
+- `/app` - Next.js App Router pages
+- `/components` - React components
+- `/styles` - Global styles and CSS
+- `/public` - Static assets
+- `/pages` - Next.js Pages Router (legacy)
+
+## Configuration Files
+
+- `next.config.js` - Next.js configuration
+- `tailwind.config.js` - TailwindCSS configuration
+- `postcss.config.js` - PostCSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `bunfig.toml` - Bun configuration

@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts import for Mrs Sheppards */
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap');
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -60,8 +57,4 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-}
-
-.font-mrs-sheppards {
-  font-family: 'Mrs Sheppards', cursive;
 } 

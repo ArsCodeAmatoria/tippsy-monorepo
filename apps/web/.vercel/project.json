@@ -1,7 +1,0 @@
-{
-  "orgId": null,
-  "projectId": null,
-  "framework": "nextjs",
-  "buildCommand": "bun run build",
-  "devCommand": "bun run dev"
-} 
