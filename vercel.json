@@ -5,8 +5,8 @@
   "outputDirectory": ".next",
   "git": {
     "deploymentEnabled": {
-      "main": false,
-      "vercel-deploy": true
+      "main": true,
+      "vercel-deploy": false
     }
   }
 } 
