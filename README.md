@@ -1,7 +1,7 @@
 # Tippsy - Dating & Bar Matching App
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f" alt="Tippsy Logo" width="200">
+  <img src="https://github.com/user-attachments/assets/a1e7e0cd-fd70-4d7d-8ce8-45ba85b7b17f" alt="Tippsy Logo">
   <p><em>Find your perfect match and the perfect bar for your first date</em></p>
 </div>
 
