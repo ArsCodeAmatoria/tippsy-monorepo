@@ -1,0 +1,78 @@
+# Tippsy Cursor Rules
+
+# TypeScript/JavaScript Rules
+rule "Use double quotes for strings" {
+  language = ["typescript", "javascript", "tsx", "jsx"]
+  message = "Use double quotes for string literals"
+  pattern = "(?<![\\\\])'"
+  replacement = "\""
+}
+
+rule "Use const for immutable variables" {
+  language = ["typescript", "javascript", "tsx", "jsx"]
+  message = "Use const for variables that are not reassigned"
+  pattern = "let ([a-zA-Z0-9_]+) = ([^;]+);(?!.*\\1\\s*=)"
+  replacement = "const $1 = $2;"
+}
+
+rule "Import React properly" {
+  language = ["tsx", "jsx"]
+  message = "Import React from 'react' at the top of the file"
+  pattern = "^(?!import React)"
+  files = ["**/*.tsx", "**/*.jsx"]
+  check_once = true
+  autofix = false
+}
+
+# CSS/SCSS Rules
+rule "Use rem instead of px for font sizes" {
+  language = ["css", "scss"]
+  message = "Use rem instead of px for font sizes for better accessibility"
+  pattern = "font-size:\\s*([0-9]+)px"
+  replacement = "font-size: calc($1 / 16)rem"
+}
+
+# TailwindCSS Rules
+rule "Use Tailwind spacing utilities" {
+  language = ["tsx", "jsx", "html"]
+  message = "Use Tailwind spacing utilities instead of custom pixel values"
+  pattern = "(margin|padding|gap):\\s*([0-9]+)px"
+  replacement = "className=\"$1-[${2}px]\""
+  autofix = false
+}
+
+# No console.log in production code
+rule "No console.log in production" {
+  language = ["typescript", "javascript", "tsx", "jsx"]
+  message = "Avoid console.log in production code. Use a logger instead."
+  pattern = "console\\.log\\("
+  severity = "warning"
+  autofix = false
+}
+
+# Prefer nullish coalescing
+rule "Prefer nullish coalescing" {
+  language = ["typescript", "javascript", "tsx", "jsx"]
+  message = "Use ?? instead of || for null/undefined checks"
+  pattern = "([a-zA-Z0-9_\\.\\[\\]]+)\\s*\\|\\|\\s*([^;]+)"
+  replacement = "$1 ?? $2"
+  autofix = false
+}
+
+# Next.js Rules
+rule "Use Link component" {
+  language = ["tsx", "jsx"]
+  message = "Use Next.js Link component instead of <a> tags for internal navigation"
+  pattern = "<a href=\"/([^\"]+)\"([^>]*)>(.*?)</a>"
+  replacement = "<Link href=\"/$1\"$2>$3</Link>"
+  autofix = false
+}
+
+# Code Organization
+rule "Group imports" {
+  language = ["typescript", "javascript", "tsx", "jsx"]
+  message = "Group imports: React first, then external libraries, then internal modules"
+  pattern = "^import"
+  check_once = true
+  autofix = false
+} 

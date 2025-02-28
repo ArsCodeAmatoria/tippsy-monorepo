@@ -1,7 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd ../.. && bun turbo run build --filter=web...",
-  "outputDirectory": "apps/web/.next",
-  "framework": "nextjs",
-  "installCommand": "cd ../.. && bun install"
+  "projectSettings": {
+    "framework": "nextjs",
+    "buildCommand": null,
+    "devCommand": null,
+    "installCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": "apps/web"
+  }
 } 
