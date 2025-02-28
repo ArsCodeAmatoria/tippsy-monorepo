@@ -1,14 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd packages/ui && bun install && bun run build && cd ../utils && bun install && bun run build && cd ../../apps/web && bun install && bun run build",
-  "outputDirectory": "apps/web/.next",
-  "projectSettings": {
-    "framework": "nextjs",
-    "buildCommand": null,
-    "devCommand": null,
-    "installCommand": null,
-    "outputDirectory": null,
-    "rootDirectory": "apps/web"
-  },
-  "ignoreCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then exit 1; else exit 0; fi"
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": null,
+  "rootDirectory": "apps/web"
 } 

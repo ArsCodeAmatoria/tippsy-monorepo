@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@tippsy/ui';
+import { Button } from '../components/ui';
 import { useEffect } from 'react';
 
 export default function Error({
