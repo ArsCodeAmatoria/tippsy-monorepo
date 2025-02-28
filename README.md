@@ -9,11 +9,13 @@
 
 Tippsy is an innovative dating app that not only helps users find compatible matches but also suggests the perfect bars and venues for their first date. By combining dating preferences with drink and venue preferences, Tippsy creates a seamless experience from match to meetup.
 
+The app features a stylish logo designed with the [Mrs Sheppards](https://fonts.google.com/specimen/Mrs+Sheppards) font from Google Fonts, with a beautiful gradient that adapts to both light and dark themes.
+
 ## Features
 
 - **Match with Compatible People**: Swipe and match with people who share your interests
 - **Bar Recommendations**: Get personalized bar suggestions based on mutual preferences
-- **Dark/Light Mode**: Enjoy a beautiful UI in both light and dark modes
+- **Dark/Light Mode**: Enjoy a beautiful UI in both light and dark modes with theme-responsive elements
 - **Authentication**: Secure login options for users
 - **Chat**: Real-time chat functionality between matches
 
