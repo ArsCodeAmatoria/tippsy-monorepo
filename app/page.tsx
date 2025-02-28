@@ -16,8 +16,10 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px] max-w-screen-xl mx-auto">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <div className="mb-6 transform scale-150 origin-left">
-                  <Logo />
+                <div className="mb-12 relative h-20">
+                  <div className="absolute left-0 top-0 transform-none">
+                    <Logo />
+                  </div>
                 </div>
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                   Find Your Perfect Match & The Perfect Bar
@@ -42,9 +44,9 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden md:flex md:justify-center">
-              <div className="relative h-[500px] w-[300px] overflow-hidden rounded-xl bg-muted/50 dark:bg-muted">
+              <div className="relative h-[500px] w-[300px] rounded-xl bg-muted/50 dark:bg-muted">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="transform scale-[2.5]">
+                  <div className="relative z-50">
                     <Logo />
                   </div>
                 </div>

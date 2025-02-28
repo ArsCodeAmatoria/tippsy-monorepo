@@ -11,8 +11,8 @@ const mrsSheppards = Mrs_Sheppards({
 
 export function Logo() {
   return (
-    <div className="overflow-visible px-3">
-      <h1 className={`text-4xl md:text-5xl font-bold ${mrsSheppards.className} text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 dark:from-pink-400 dark:to-violet-400 tracking-wider`}>
+    <div className="relative z-50 px-6 py-3">
+      <h1 className={`text-4xl md:text-5xl font-bold ${mrsSheppards.className} text-black dark:text-white tracking-widest mx-2 whitespace-nowrap`}>
         Tippsy
       </h1>
     </div>
